@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include receptionist *.css
+recursive-include receptionist *.csv
+recursive-include receptionist *.html
+recursive-include receptionist *.ico
+recursive-include receptionist *.js
+recursive-include receptionist *.json
+recursive-include receptionist *.md
+recursive-include receptionist *.png
+recursive-include receptionist *.py
+recursive-include receptionist *.svg
+recursive-include receptionist *.txt
+recursive-exclude receptionist *.pyc

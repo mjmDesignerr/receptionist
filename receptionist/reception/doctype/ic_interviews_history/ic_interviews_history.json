@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:ic_name",
+ "creation": "2023-07-26 15:28:14.969081",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "protection_monitor",
+  "appointment_date",
+  "appointment_time",
+  "column_break_m0rqb",
+  "ic_name",
+  "ic_id",
+  "start_waiting",
+  "ic_status",
+  "section_break_h1wtt",
+  "end_meet",
+  "section_break_rmfjw",
+  "note"
+ ],
+ "fields": [
+  {
+   "default": "User",
+   "fieldname": "protection_monitor",
+   "fieldtype": "Link",
+   "label": "Protection Monitor",
+   "options": "User"
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Appointment Date",
+   "options": "from frappe import utils\nutils.now()\nutils.today()",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Appointment Time",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "ic_id.ic_name",
+   "fieldname": "ic_name",
+   "fieldtype": "Link",
+   "label": "IC Name",
+   "options": "IC",
+   "read_only": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "depends_on": "ic_name",
+   "fetch_from": "ic_name.id_no",
+   "fieldname": "ic_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "IC ID",
+   "options": "IC"
+  },
+  {
+   "fieldname": "start_waiting",
+   "fieldtype": "Time",
+   "label": "Start Waiting"
+  },
+  {
+   "default": "Not Arrived",
+   "fieldname": "ic_status",
+   "fieldtype": "Select",
+   "label": "IC Status",
+   "options": "Not Arrived\nArrived\nIn Meeting\nDone"
+  },
+  {
+   "fieldname": "end_meet",
+   "fieldtype": "Time",
+   "label": "End Meet"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Text Editor",
+   "label": "Note"
+  },
+  {
+   "fieldname": "column_break_m0rqb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rmfjw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_h1wtt",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-06 22:51:26.557428",
+ "modified_by": "Administrator",
+ "module": "Reception",
+ "name": "IC Interviews History",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "autoname": "format:{id_no} - {ic_name}",
+ "creation": "2023-07-25 10:10:54.134641",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ic_name",
+  "id_no",
+  "photo"
+ ],
+ "fields": [
+  {
+   "fieldname": "ic_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "IC Name",
+   "options": "\n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "id_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Case ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Photo"
+  }
+ ],
+ "image_field": "photo",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "IC",
+   "link_doctype": "Reception",
+   "link_fieldname": "ic_name"
+  }
+ ],
+ "modified": "2023-07-31 13:15:28.796133",
+ "modified_by": "Administrator",
+ "module": "Reception",
+ "name": "IC",
+ "name_case": "Title Case",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "ic_name",
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "id_no",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

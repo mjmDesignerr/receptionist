@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_auto_repeat": 1,
+ "allow_copy": 1,
+ "allow_import": 1,
+ "autoname": "format:IC - {######}",
+ "creation": "2023-07-25 10:36:40.919381",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Other",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "case_id",
+  "ic_id",
+  "ic_name",
+  "column_break_xtqoi",
+  "start_waiting",
+  "id_issue_date",
+  "done_by",
+  "end_time",
+  "note_tab",
+  "note"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "start_waiting",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Start Waiting"
+  },
+  {
+   "default": "User",
+   "fieldname": "done_by",
+   "fieldtype": "Link",
+   "label": "Done By",
+   "options": "User"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "in_preview": 1,
+   "label": "End Time"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Text Editor",
+   "label": "Note"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Id",
+   "unique": 1
+  },
+  {
+   "depends_on": "case_id",
+   "fetch_from": "case_id.ic_name",
+   "fetch_if_empty": 1,
+   "fieldname": "ic_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "IC Name",
+   "options": "IC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xtqoi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "note_tab",
+   "fieldtype": "Tab Break",
+   "label": "Note"
+  },
+  {
+   "fieldname": "id_issue_date",
+   "fieldtype": "Date",
+   "label": "ID Issue Date"
+  },
+  {
+   "depends_on": "case_id",
+   "fetch_from": "case_id.id_no",
+   "fieldname": "ic_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "IC ID",
+   "options": "IC",
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "label": "Case ID",
+   "no_copy": 1,
+   "options": "IC"
+  }
+ ],
+ "hide_toolbar": 1,
+ "icon": "app",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "IC",
+   "link_fieldname": "ic_name"
+  }
+ ],
+ "modified": "2023-08-07 12:54:02.351244",
+ "modified_by": "Administrator",
+ "module": "Reception",
+ "name": "Reception",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Red",
+   "title": "Waiting"
+  },
+  {
+   "color": "Light Blue",
+   "title": "In Process"
+  },
+  {
+   "color": "Green",
+   "title": "Done"
+  }
+ ],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
