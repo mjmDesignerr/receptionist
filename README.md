@@ -1,6 +1,6 @@
 ## Receptionist
 
-REceptionist Ap
+Reception App
 
 #### License
 
