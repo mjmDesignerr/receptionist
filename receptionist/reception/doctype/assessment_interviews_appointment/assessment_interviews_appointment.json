@@ -7,6 +7,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "user",
   "protection_monitor",
   "appointment_date",
   "section_break_96dra",
@@ -24,21 +25,31 @@
    "fieldtype": "Section Break"
   },
   {
-   "default": "User",
+   "fetch_from": "user.full_name",
    "fieldname": "protection_monitor",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "label": "Protection Monitor",
-   "options": "User"
+   "read_only": 1
   },
   {
    "fieldname": "appointment_date",
    "fieldtype": "Date",
    "label": "Appointment Date"
+  },
+  {
+   "default": "User",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "User",
+   "options": "User",
+   "read_only": 1
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-03 16:10:17.884587",
+ "modified": "2023-09-04 12:25:47.042352",
  "modified_by": "Administrator",
  "module": "Reception",
  "name": "Assessment Interviews Appointment",
@@ -55,9 +66,35 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Assessment",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Social Worker",
+   "select": 1,
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

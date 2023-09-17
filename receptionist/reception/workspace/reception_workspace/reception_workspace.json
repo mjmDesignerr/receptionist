@@ -2,10 +2,10 @@
  "charts": [
   {
    "chart_name": "Dashboard Chart IC Count",
-   "label": "Dashboard Chart IC Count"
+   "label": "IC Count"
   }
  ],
- "content": "[{\"id\":\"u8txJqWZT1\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Dashboard Chart IC Count\",\"col\":12}},{\"id\":\"Z6QGVQnzr0\",\"type\":\"paragraph\",\"data\":{\"text\":\"<br>\",\"col\":12}},{\"id\":\"CICuV5devt\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>ICs <br></b></span>\",\"col\":12}},{\"id\":\"W3wkoqDqbC\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Add New IC\",\"col\":3}},{\"id\":\"QkkbsMs38Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IC List\",\"col\":4}},{\"id\":\"2_ejt3bMlc\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"sD-PPs1Rz6\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Assessment Interviews<br></b></span>\",\"col\":12}},{\"id\":\"PTTrCGSJw8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Interviews List\",\"col\":4}},{\"id\":\"GnFzBhsnc5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IC Interviews History\",\"col\":3}},{\"id\":\"ZKelWgHCsh\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"q19Iz2oTNb\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Reception\",\"col\":4}},{\"id\":\"jTiWj1TMoB\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Assessment Interviews Appointment\",\"col\":4}},{\"id\":\"UqsHzgn3CY\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"IC\",\"col\":4}}]",
+ "content": "[{\"id\":\"u8txJqWZT1\",\"type\":\"chart\",\"data\":{\"chart_name\":\"IC Count\",\"col\":12}},{\"id\":\"CICuV5devt\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reception &amp; </b><b>Assessment Interviews</b><b><br></b></span>\",\"col\":12}},{\"id\":\"QkkbsMs38Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Reception List\",\"col\":4}},{\"id\":\"PTTrCGSJw8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Interviews List\",\"col\":5}},{\"id\":\"ZKelWgHCsh\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"q19Iz2oTNb\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Reception\",\"col\":5}},{\"id\":\"jTiWj1TMoB\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Assessment Interviews Appointment\",\"col\":5}}]",
  "creation": "2023-08-06 22:35:12.149848",
  "custom_blocks": [],
  "docstatus": 0,
@@ -28,7 +28,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-08-07 00:19:59.145178",
+ "modified": "2023-09-17 13:37:58.175708",
  "modified_by": "Administrator",
  "module": "Reception",
  "name": "Reception Workspace",
@@ -37,10 +37,6 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [
-  {
-   "document_type": "IC",
-   "label": "IC"
-  },
   {
    "document_type": "Reception",
    "label": "Reception"
@@ -63,22 +59,8 @@
   {
    "color": "Green",
    "doc_view": "List",
-   "label": "IC List",
+   "label": "Reception List",
    "link_to": "Reception",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "New",
-   "label": "Add New IC",
-   "link_to": "Reception",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "IC Interviews History",
-   "link_to": "IC Interviews History",
    "type": "DocType"
   }
  ],
